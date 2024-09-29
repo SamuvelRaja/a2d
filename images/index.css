@@ -1,0 +1,11 @@
+@font-face {
+    font-family: clash;
+    src: url(./ClashDisplay.ttf);
+}
+body{
+    font-family: 'clash' , sans-serif;
+}
+.main-div{
+    background-size: cover;
+    background-position-y:-100px ;
+}

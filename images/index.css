@@ -9,3 +9,47 @@ body{
     background-size: cover;
     background-position-y:-100px ;
 }
+#Testimonial{
+    width: 100%;
+    max-width: 940px;
+    height: 600px;
+}
+#Testimonial .card img{
+display: none;
+}
+#Testimonial .show-1.card img{
+display: block !important;
+}
+#Testimonial .show-1{
+    z-index: 100;
+    box-shadow: 0px 20px 60px 0px #2E213D14;
+}
+#Testimonial .show-2{
+    z-index: 50;
+    scale: 0.9;
+    padding-bottom: 100px;
+    top: 70px;
+    box-shadow: 0px 20px 60px 0px #2E213D14;
+}
+#Testimonial .show-3{
+    z-index: 10;
+    scale: 0.8;
+    padding-bottom: 100px;
+    top: 140px;
+    box-shadow: 0px 20px 60px 0px #2E213D14;
+}
+
+@media (max-width: 1040px) {
+    #Testimonial {
+        max-width: 470px;
+        height: 400px;
+    }
+    #Testimonial .show-2 {
+        padding-bottom: 50px;
+        top: 40px;
+    }
+    #Testimonial .show-3 {
+        padding-bottom: 50px;
+        top: 80px;
+    }
+}

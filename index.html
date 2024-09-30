@@ -19,7 +19,7 @@
     <div style="background-image: url(./images/topgrad.svg);" class="background bg-no-repeat main-div">
         <header class="flex justify-between py-4">
             <img src="/images/pcfactory.svg" alt="pcfactory logo" class="ml-8">
-            <div class="w-screen flex justify-center fixed">
+            <div class="w-screen absolute justify-center hidden lg:flex">
                 <nav class="flex flex-col  w-fit sm:flex-row bg-[#FFFFFF26] rounded-[30px] py-4 px-10 gap-4 ">
                     <a href="/">Home</a>
                     <a href="#why">Why us</a>
@@ -28,7 +28,7 @@
                 </nav>
             </div>
             
-            <a href="#contact" class="inline-flex items-center gap-2 backdrop-blur-[50%] bg-[#FFFFFF26] mr-8 py-1 pl-4 pr-1 rounded-full">
+            <a href="#contact" class="hidden lg:inline-flex items-center gap-2 backdrop-blur-[50%] bg-[#FFFFFF26] mr-8 py-1 pl-4 pr-1 rounded-full">
                 Contact Us
                 <span class="p-2 bg-[#FEA116] rounded-full">
                     <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -37,19 +37,44 @@
                     </svg>
                 </span>
             </a>
+            <span  id="hamburgerBtn" class="lg:hidden   backdrop-blur-[50%] bg-[#FFFFFF26] mr-8 p-4 rounded-full">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 5H20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4 12H20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4 19H20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </span>
         </header>
+        <div id="mobileMenu" class="fixed top-0 right-0 w-2/3 h-full bg-gray-800 text-white transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden">
+            <div class="p-6">
+            <!-- Close Button -->
+            <button id="closeBtn" class="mb-4 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            
+            <!-- Menu Items -->
+            <ul class="space-y-4">
+                <li><a href="/">Home</a></li>
+                <li><a href="#why">Why us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+            </div>
+        </div>
         <main>
-            <section class="flex flex-col items-center max-w-[1160px] mx-auto mt-16 gap-4">
-                <div class="w-fit rounded-full bg-[#FFFFFF26] inline-flex p-1 pr-2 items-center mx-auto text-sm">
+            <section class="flex flex-col items-center max-w-[1160px] mx-auto mt-16 gap-4 px-4">
+                <div class="w-fit rounded-full bg-[#FFFFFF26] inline-flex gap-2 p-1 pr-2 items-center mx-auto text-sm">
                     <img src="/images/soldier.svg" alt="">
                     Hey Soldiers!
                 </div>
-                <h1 class="text-center text-[52px]">
+                <h1 class="text-center text-3xl md:text-[52px]">
                     From Components to Masterpiece Your <span>Ultimate</span>  PC  Awaits
                 </h1>
-                <p class="text-[#E9E9E9] text-base font-light">Transforming components into computing powerhouses. We build the PC you've always wanted, tailored to your needs and budget.</p>
-                <div class="flex justify-center gap-4 my-6">
-                    <a href="" class="inline-flex items-center gap-4 text-black  bg-[#FFFFFF] py-1 pl-4 pr-1 rounded-full">
+                <p class="text-[#E9E9E9] text-sm md:text-base text-center font-light">Transforming components into computing powerhouses. We build the PC you've always wanted, tailored to your needs and budget.</p>
+                <div class="flex flex-col min-[430px]:flex-row justify-center gap-4 my-6">
+                    <a href="" class="inline-flex text-xs md:text-sm items-center gap-4 text-black  bg-[#FFFFFF] py-1 pl-4 pr-1 rounded-full">
                         Build Your Dream PC
                         <span class="p-2 bg-[#FEA116] rounded-full">
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,7 +85,7 @@
                             </svg>
                         </span>
                     </a>
-                    <a href="" class="inline-flex items-center gap-4 backdrop-blur-[50%] bg-[#FFFFFF26] py-1 pl-4 pr-1 rounded-full">
+                    <a href="" class="inline-flex text-xs md:text-sm items-center gap-4 backdrop-blur-[50%] bg-[#FFFFFF26] py-1 pl-4 pr-1 rounded-full">
                         Book a Demo
                         <span class="p-4 bg-black rounded-full">
                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -85,7 +110,7 @@
                             </svg>
                         </span>
                 </a>
-                <h2 class="text-2xl mt-10 ">
+                <h2 class="text-[24px] md:text-[34px] font-medium mt-10 ">
                     How It Works?
                 </h2>
                 <div class="flex justify-center gap-4 mt-16 flex-wrap">
@@ -195,11 +220,354 @@
                 </div>
                 
             </section>
-            <section>
+            <section class="py-16">
+                <div class="flex flex-col items-center">
+                    <a href="" class="inline-flex items-center border border-[#BBBBBB] gap-4 mx-auto backdrop-blur-[50%] bg-[#FFFFFF26] py-1 pl-4 pr-1 rounded-full">
+                        Our Popular Builds
+                        <span class="p-4 bg-black rounded-full">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.5 22C10.6818 22 9.90019 21.6698 8.33693 21.0095C4.44564 19.3657 2.5 18.5438 2.5 17.1613C2.5 16.7742 2.5 10.0645 2.5 7M11.5 22V11.3548M11.5 22C11.8404 22 12.1463 21.9428 12.5 21.8285M20.5 7V11.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18.5 18.0005L19.4056 17.0949M22.5 18C22.5 15.7909 20.7091 14 18.5 14C16.2909 14 14.5 15.7909 14.5 18C14.5 20.2091 16.2909 22 18.5 22C20.7091 22 22.5 20.2091 22.5 18Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7.82592 9.69138L4.90472 8.27785C3.30157 7.5021 2.5 7.11423 2.5 6.5C2.5 5.88577 3.30157 5.4979 4.90472 4.72215L7.82592 3.30862C9.62883 2.43621 10.5303 2 11.5 2C12.4697 2 13.3712 2.4362 15.1741 3.30862L18.0953 4.72215C19.6984 5.4979 20.5 5.88577 20.5 6.5C20.5 7.11423 19.6984 7.5021 18.0953 8.27785L15.1741 9.69138C13.3712 10.5638 12.4697 11 11.5 11C10.5303 11 9.62883 10.5638 7.82592 9.69138Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.5 12L7.5 13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16.5 4L6.5 9" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <h2 class="text-[24px] md:text-[34px] font-medium my-10 ">A2D’S Powerful Builds</h2>
+                    
+                </div>
+                <div class="px-4 mb-20">
+                        <div class="flex flex-col md:flex-row  gap-4">
+                            <div class="bg-[#9B9B9B33] flex-col flex justify-between rounded-md px-4 pt-4 w-full md:w-[60%]">
+                                <div>
+                                    <h3 class="text-[30px]">AMD  RYZEN 9  Build</h3>
+                                    <p class="text-base font-extralight">From  ₹1,80,660</p>
+                                </div>
+                                
+                                <img src="./images/pc-1.webp" alt="" class="w-fit">
+                            </div>
+                            <div class="bg-[#9B9B9B33] flex-col flex justify-between rounded-md px-4 pt-4 w-full md:w-[40%]">
+                                <div>
+                                    <h3 class="text-[30px]">AMD  RYZEN 7  Build</h3>
+                                    <p class="text-base font-extralight">From  ₹1,24,000</p>
+                                </div>
+                                
+                                <img src="./images/pc-4.webp" alt="" class="w-fit">
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row gap-4 mt-4">
+                            <div class="bg-[#9B9B9B33] flex-col flex justify-between rounded-md px-4 pt-4 w-full md:w-1/2">
+                                <div>
+                                    <h3 class="text-[30px]">Intel Core i9 Custom RGB Build</h3>
+                                    <p class="text-base font-extralight">From  ₹1,50,660</p>
+                                </div>
+                                
+                                <img src="./images/pc-2.webp" alt="" class="w-fit">
+                            </div>
+                            <div class="bg-[#9B9B9B33] flex-col flex justify-between rounded-md px-4 pt-4 w-full md:w-1/2">
+                                <div>
+                                    <h3 class="text-[30px]">Intel Core i7 Custom RGB Build</h3>
+                                <p class="text-base font-extralight">From  ₹1,08,660</p>
+                                </div>
+                                
+                                <img src="./images/pc-3.webp" alt="" class="w-fit">
+                            </div>
+                        </div>
+                    </div>
                 
             </section>
+            <section class="py-16 bg-white text-black px-4 sm:px-8">
+                <div class="flex flex-col items-center">
+                    <a href="" class="inline-flex items-center border border-[#BBBBBB] gap-4 mx-auto backdrop-blur-[50%] bg-[#FFFFFF26] py-1 pl-4 pr-1 rounded-full">
+                        Build Your Dream PC
+                            <span class="p-4 bg-black rounded-full">
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5 22C10.6818 22 9.90019 21.6698 8.33693 21.0095C4.44564 19.3657 2.5 18.5438 2.5 17.1613C2.5 16.7742 2.5 10.0645 2.5 7M11.5 22V11.3548M11.5 22C11.8404 22 12.1463 21.9428 12.5 21.8285M20.5 7V11.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M18.5 18.0005L19.4056 17.0949M22.5 18C22.5 15.7909 20.7091 14 18.5 14C16.2909 14 14.5 15.7909 14.5 18C14.5 20.2091 16.2909 22 18.5 22C20.7091 22 22.5 20.2091 22.5 18Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.82592 9.69138L4.90472 8.27785C3.30157 7.5021 2.5 7.11423 2.5 6.5C2.5 5.88577 3.30157 5.4979 4.90472 4.72215L7.82592 3.30862C9.62883 2.43621 10.5303 2 11.5 2C12.4697 2 13.3712 2.4362 15.1741 3.30862L18.0953 4.72215C19.6984 5.4979 20.5 5.88577 20.5 6.5C20.5 7.11423 19.6984 7.5021 18.0953 8.27785L15.1741 9.69138C13.3712 10.5638 12.4697 11 11.5 11C10.5303 11 9.62883 10.5638 7.82592 9.69138Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.5 12L7.5 13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16.5 4L6.5 9" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                    </a>
+                    <h2 class="text-[24px] md:text-[34px] font-medium mt-10 ">
+                        Build your dream PC with A2D Experts
+                    </h2>
+                    <p class=" text-base font-light mt-8">Transforming components into computing powerhouses. We build the PC you've always wanted, tailored to your needs and budget.</p>
+                    <div class="flex p-2 rounded-full gap-2 md:gap-4 border border-[#BBBBBB] w-fit my-10  text-xs sm:text-sm bg-[#F7f7f7] ">
+                        <a href="" class="py-4 px-4 md:px-10 bg-black text-white rounded-[50px]"> Select by own</a>
+                        <a href="" class="py-4 px-4 md:px-10 rounded-[50px]"> Request From Expert</a>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:flex-row gap-4">
+                    <div class="lg:w-1/2">
+                        <img src="/images/process.webp" alt="">
+                    </div>
+                    <div class="lg:w-1/2 bg-[#f7f7f7] p-7 flex flex-col gap-4 rounded-md">
+                        <h3 class="text-2xl font-medium">Select Components</h3>
+                        <form id="pc-form">
+                            <div class="mb-4">
+                                <label for="processor" class="block font-light text-sm text-gray-700">Select Processor</label>
+                                <select id="processor" class="block w-full mt-1 rounded-md border border-[#e2e2e2] p-2 " onchange="updateTotal()">
+                                    <option value="15000">AMD Ryzen 7</option>
+                                    <option value="20000">Intel Core i7</option>
+                                    <option value="30000">AMD Ryzen 9</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="motherboard" class="block font-light text-sm text-gray-700">Select Motherboard</label>
+                                <select id="motherboard" class="block w-full mt-1 rounded-md border border-[#e2e2e2] p-2" onchange="updateTotal()">
+                                    <option value="10000">Intel LGA 1151 ATX</option>
+                                    <option value="15000">MSI B450 Tomahawk</option>
+                                    <option value="20000">Asus ROG Strix X570-E</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="ram" class="block font-light text-sm text-gray-700">RAM</label>
+                                <select id="ram" class="block w-full mt-1 rounded-md border border-[#e2e2e2] p-2" onchange="updateTotal()">
+                                    <option value="4000">8GB DDR4 (Qty 1)</option>
+                                    <option value="8000">8GB DDR4 (Qty 2)</option>
+                                    <option value="12000">16GB DDR4 (Qty 2)</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="storage" class="block font-light text-sm text-gray-700">Storage</label>
+                                <select id="storage" class="block w-full mt-1 rounded-md border border-[#e2e2e2] p-2" onchange="updateTotal()">
+                                    <option value="6000">Samsung 960 EVO M.2 SSD NVME</option>
+                                    <option value="8000">WD Black SN750 NVME SSD</option>
+                                    <option value="10000">Crucial P5 Plus NVME SSD</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="cooler" class="block font-light text-sm text-gray-700">Cooler</label>
+                                <select id="cooler" class="block w-full mt-1 rounded-md border border-[#e2e2e2] p-2" onchange="updateTotal()">
+                                    <option value="3000">Corsair Cooler</option>
+                                    <option value="5000">NZXT Kraken X63</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="gpu" class="block font-light text-sm text-gray-700">Graphics Card</label>
+                                <select id="gpu" class="block w-full mt-1 rounded-md border border-[#e2e2e2] p-2" onchange="updateTotal()">
+                                    <option value="40000">MSI - 16GB Graphics Card</option>
+                                    <option value="60000">Nvidia RTX 3070</option>
+                                    <option value="80000">Nvidia RTX 3080</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="cabinet" class="block font-light text-sm text-gray-700">Cabinet</label>
+                                <select id="cabinet" class="block w-full mt-1 rounded-md border border-[#e2e2e2] p-2" onchange="updateTotal()">
+                                    <option value="5000">Cougar Monster Gaming Cabinet</option>
+                                    <option value="7000">NZXT H510</option>
+                                </select>
+                            </div>
+
+                            <div class=" flex flex-col md:flex-row justify-between ">
+                                <h4 class=" text-[24px] md:text-[34px] font-medium inline-flex">Total: <span id="total-cost">₹0</span></h4>
+                                <button type="button" class=" bg-black text-white text-base py-2 px-4 rounded-md" onclick="proceedToPayment()">Continue to Payment →</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-[#f7f7f7] text-black py-20">
+                <h2 class="text-[24px] md:text-[34px] font-medium text-center mb-[150px]">
+                    A Valuable Testimonials!
+                </h2>
+                <div class="flex gap-4 justify-center ">
+                    <button class="px-4 hidden lg:block">
+                        <svg width="21" height="36" viewBox="0 0 21 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.5607 1.50879L2.00001 17.5175L18.5607 33.5261" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="px-4 lg:hidden">
+                        <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.75146 2.05957L2.00002 7.6193L7.75146 13.179" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="relative" id="Testimonial">
+                        <!-- Testimonial Card -->
+                        <div class="absolute overflow-hidden lg:overflow-visible show-1 card bg-white rounded-lg shadow-lg px-2 md:px-6  w-full h-full flex flex-col lg:flex-row  mx-auto lg:max-h-[490px]">
+                            
+                            <!-- Profile Image -->
+                            <div class="w-[40%]">
+                                <img class="rounded-lg object-cover relative lg:top-[-68px]" src="./images/mg.webp" alt="Profile Image">
+                            </div>
+                            
+                            <!-- Testimonial Content -->
+                            <div class="text-ellipsis w-full lg:w-[60%] pl-2 md:pl-6 flex flex-col justify-end">
+                                <div>
+                                    <!-- Name and Title -->
+                                    <h3 class="text-base lg:text-2xl font-medium ">Madan Gowri - MG</h3>
+                                    <p class="text-sm lg:text-lg mt-2 md:mb-4 text-[#979797] font-light">Youtube Content Creator - Chennai</p>
+
+                                    <!-- Testimonial Text -->
+                                    <p class="text-xs lg:text-[17px] my-2 lg:my-8  ">
+                                    I recently built a new PC for my YouTube channel, and I can't express how much it has transformed my content creation process! With the Ryzen 7 5800X and RTX 3080, my editing software runs like a dream. Rendering times have been cut in half, allowing me to produce videos faster than ever.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute show-2 card  bg-white rounded-lg shadow-lg px-2 md:px-6 w-full h-full flex flex-col lg:flex-row  mx-auto lg:max-h-[490px]">
+                            
+                            <!-- Profile Image -->
+                            <div class="w-[40%]">
+                                <img class="rounded-lg object-cover relative lg:top-[-68px]" src="./images/mg.webp" alt="Profile Image">
+                            </div>
+                            
+                            <!-- Testimonial Content -->
+                            <div class=" w-full md:w-[60%] pl-6 flex flex-col justify-end">
+                            <div>
+                                <!-- Name and Title -->
+                                <h3 class="text-2xl font-medium ">Madan Gowri - MG</h3>
+                                <p class="text-lg mt-2 mb-4 text-[#979797] font-light">Youtube Content Creator - Chennai</p>
+
+                                <!-- Testimonial Text -->
+                                <p class="text-[17px] my-8">
+                                
+                            </div>
+                            </div>
+                        </div>
+                        <div class="absolute show-3 card  bg-white rounded-lg shadow-lg px-6 w-full h-full flex flex-col lg:flex-row  mx-auto lg:max-h-[490px]">
+                            
+                            <!-- Profile Image -->
+                            <div class="w-[40%]">
+                                <img class="rounded-lg object-cover relative lg:top-[-68px]" src="./images/mg.webp" alt="Profile Image">
+                            </div>
+                            
+                            <!-- Testimonial Content -->
+                            <div class=" w-full md:w-[60%] pl-6 flex flex-col justify-end">
+                            <div>
+                                <!-- Name and Title -->
+                                <h3 class="text-2xl font-medium ">Madan Gowri - MG</h3>
+                                <p class="text-lg mt-2 mb-4 text-[#979797] font-light">Youtube Content Creator - Chennai</p>
+
+                                <!-- Testimonial Text -->
+                                <p class="text-[17px] my-8">
+                                
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="px-4 hidden lg:block">
+                        <svg width="21" height="36" viewBox="0 0 21 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.43933 1.50879L19 17.5175L2.43933 33.5261" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="px-4 lg:hidden">
+                        <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.24854 2.05957L7.99998 7.6193L2.24854 13.179" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </section>
         </main>
+        <footer class="bg-black text-white md:p-8 p-4">
+        <div class="container mx-auto flex flex-col md:flex-row gap-4 justify-between md:items-center">
+            <!-- Left Section: Logo and Social Icons -->
+            <div class="flex flex-col gap-4 ">
+            <!-- Logo -->
+            <div>
+                <img src="/images/pcfactory.svg" alt="Logo"  />
+            </div>
+            <!-- Social Icons -->
+            <div class="flex gap-4">
+                <a href="#" class="hover:text-gray-400">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.5 6H13.5C12.9477 6 12.5 6.44772 12.5 7V10H16.5C16.6137 9.99748 16.7216 10.0504 16.7892 10.1419C16.8568 10.2334 16.8758 10.352 16.84 10.46L16.1 12.66C16.0318 12.8619 15.8431 12.9984 15.63 13H12.5V20.5C12.5 20.7761 12.2761 21 12 21H9.5C9.22386 21 9 20.7761 9 20.5V13H7.5C7.22386 13 7 12.7761 7 12.5V10.5C7 10.2239 7.22386 10 7.5 10H9V7C9 4.79086 10.7909 3 13 3H16.5C16.7761 3 17 3.22386 17 3.5V5.5C17 5.77614 16.7761 6 16.5 6Z" fill="white"/>
+                    </svg>
+                </a>
+                <a href="#" class="hover:text-gray-400">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16 3H8C5.23858 3 3 5.23858 3 8V16C3 18.7614 5.23858 21 8 21H16C18.7614 21 21 18.7614 21 16V8C21 5.23858 18.7614 3 16 3ZM19.25 16C19.2445 17.7926 17.7926 19.2445 16 19.25H8C6.20735 19.2445 4.75549 17.7926 4.75 16V8C4.75549 6.20735 6.20735 4.75549 8 4.75H16C17.7926 4.75549 19.2445 6.20735 19.25 8V16ZM16.75 8.25C17.3023 8.25 17.75 7.80228 17.75 7.25C17.75 6.69772 17.3023 6.25 16.75 6.25C16.1977 6.25 15.75 6.69772 15.75 7.25C15.75 7.80228 16.1977 8.25 16.75 8.25ZM12 7.5C9.51472 7.5 7.5 9.51472 7.5 12C7.5 14.4853 9.51472 16.5 12 16.5C14.4853 16.5 16.5 14.4853 16.5 12C16.5027 10.8057 16.0294 9.65957 15.1849 8.81508C14.3404 7.97059 13.1943 7.49734 12 7.5ZM9.25 12C9.25 13.5188 10.4812 14.75 12 14.75C13.5188 14.75 14.75 13.5188 14.75 12C14.75 10.4812 13.5188 9.25 12 9.25C10.4812 9.25 9.25 10.4812 9.25 12Z" fill="white"/>
+                    </svg>
+                </a>
+                <a href="#" class="hover:text-gray-400">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.9728 6.7174C20.5084 7.33692 19.947 7.87733 19.3103 8.31776C19.3103 8.47959 19.3103 8.64142 19.3103 8.81225C19.3154 11.7511 18.1415 14.5691 16.0518 16.6345C13.962 18.6999 11.1312 19.8399 8.19405 19.7989C6.49599 19.8046 4.81967 19.4169 3.29642 18.6661C3.21428 18.6302 3.16131 18.549 3.16162 18.4593V18.3604C3.16162 18.2313 3.26623 18.1267 3.39527 18.1267C5.06442 18.0716 6.67402 17.4929 7.99634 16.4724C6.48553 16.4419 5.12619 15.5469 4.5006 14.1707C4.46901 14.0956 4.47884 14.0093 4.52657 13.9432C4.57429 13.8771 4.653 13.8407 4.73425 13.8471C5.19342 13.8932 5.65718 13.8505 6.1002 13.7212C4.43239 13.375 3.17921 11.9904 2.99986 10.2957C2.99349 10.2144 3.02992 10.1357 3.096 10.0879C3.16207 10.0402 3.24824 10.0303 3.32338 10.062C3.77094 10.2595 4.25409 10.3635 4.74324 10.3676C3.28184 9.40846 2.65061 7.58405 3.20655 5.92622C3.26394 5.76513 3.40181 5.64612 3.5695 5.61294C3.73718 5.57975 3.90996 5.63728 4.02432 5.76439C5.99639 7.86325 8.70604 9.11396 11.5819 9.25279C11.5083 8.95885 11.4721 8.65676 11.4741 8.35372C11.501 6.76472 12.4842 5.34921 13.9634 4.76987C15.4425 4.19054 17.1249 4.56203 18.223 5.71044C18.9714 5.56785 19.695 5.31645 20.3707 4.96421C20.4202 4.93331 20.483 4.93331 20.5325 4.96421C20.5634 5.01373 20.5634 5.07652 20.5325 5.12604C20.2052 5.87552 19.6523 6.50412 18.9509 6.92419C19.5651 6.85296 20.1685 6.70807 20.7482 6.49264C20.797 6.45942 20.8611 6.45942 20.9099 6.49264C20.9508 6.51134 20.9814 6.54711 20.9935 6.59042C21.0056 6.63373 20.998 6.68018 20.9728 6.7174Z" fill="white"/>
+                    </svg>
+                </a>
+                <a href="#" class="hover:text-gray-400">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3ZM8 18C8.27614 18 8.5 17.7761 8.5 17.5V10.5C8.5 10.2239 8.27614 10 8 10H6.5C6.22386 10 6 10.2239 6 10.5V17.5C6 17.7761 6.22386 18 6.5 18H8ZM7.25 9C6.42157 9 5.75 8.32843 5.75 7.5C5.75 6.67157 6.42157 6 7.25 6C8.07843 6 8.75 6.67157 8.75 7.5C8.75 8.32843 8.07843 9 7.25 9ZM17.5 18C17.7761 18 18 17.7761 18 17.5V12.9C18.0325 11.3108 16.8576 9.95452 15.28 9.76C14.177 9.65925 13.1083 10.1744 12.5 11.1V10.5C12.5 10.2239 12.2761 10 12 10H10.5C10.2239 10 10 10.2239 10 10.5V17.5C10 17.7761 10.2239 18 10.5 18H12C12.2761 18 12.5 17.7761 12.5 17.5V13.75C12.5 12.9216 13.1716 12.25 14 12.25C14.8284 12.25 15.5 12.9216 15.5 13.75V17.5C15.5 17.7761 15.7239 18 16 18H17.5Z" fill="white"/>
+                    </svg>
+                </a>
+            </div>
+            </div>
+            <!-- Right Section: Subscribe Form -->
+            <div>
+                <form class="flex gap-2 md:gap-4">
+                    <input type="email" placeholder="Enter your email" class="p-2 md:p-3  focus:outline-none text-black" />
+                    <button class=" px-2 md:px-6 border border-[#979797] hover:bg-gray-300">Subscribe</button>
+                </form>
+                <p class="text-xs mt-2">
+                    By subscribing you agree to with our <a href="#" class="underline">Privacy Policy</a>
+                </p>
+            </div>
+        </div>
+        <!-- Bottom Section: Copyright and Links -->
+        <div class="border-t border-gray-700 mt-8 pt-4 text-xs font-light">
+            <div class="container mx-auto flex justify-between items-center flex-col md:flex-row gap-4">
+            <p>©Designed by Gunal Designs 2024 - All Rights Reserved</p>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-gray-400 underline">Privacy Policy</a>
+                <a href="#" class="hover:text-gray-400 underline">Terms of Service</a>
+                <a href="#" class="hover:text-gray-400 underline">Cookies Settings</a>
+            </div>
+            </div>
+        </div>
+        </footer>
+
     </div>
+    <script>
+        function updateTotal() {
+            // Get values of all components
+            const processor = parseInt(document.getElementById("processor").value);
+            const motherboard = parseInt(document.getElementById("motherboard").value);
+            const ram = parseInt(document.getElementById("ram").value);
+            const storage = parseInt(document.getElementById("storage").value);
+            const cooler = parseInt(document.getElementById("cooler").value);
+            const gpu = parseInt(document.getElementById("gpu").value);
+            const cabinet = parseInt(document.getElementById("cabinet").value);
+
+            // Calculate total cost
+            const totalCost = processor + motherboard + ram + storage + cooler + gpu + cabinet;
+
+            // Update the displayed total cost
+            document.getElementById("total-cost").textContent = `₹${totalCost.toLocaleString()}`;
+        }
+
+        function proceedToPayment() {
+            alert("Proceeding to Payment...");
+        }
+
+        // Initialize total cost on page load
+        updateTotal();
+
+        // Grab elements
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const closeBtn = document.getElementById('closeBtn');
+
+    // Open menu
+    hamburgerBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('translate-x-full');
+    });
+
+    // Close menu
+    closeBtn.addEventListener('click', () => {
+      mobileMenu.classList.add('translate-x-full');
+    });
+
+    </script>
     
 </body>
 </html>

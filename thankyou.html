@@ -233,163 +233,352 @@
                 </nav>
             </div>
         </header>
-      <div id="hero">
-        <section id="downloadHero" class="bg-[#AC4D6F] pt-24 min-h-[70vh] relative">
-          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-              <div class="text-center lg:text-left animate__animated animate__fadeInLeft">
-                <h1 class="text-4xl md:text-5xl font-bold text-white md:text-left mb-6">
-                  Thank You for Subscribing!
-                </h1>
-                <p class="text-gray-300 text-lg mb-8 text-center md:text-left">
-                  Your brochure is ready to download. Discover our exquisite collection of artisanal cakes and confections.
-                </p>
-                <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-                  <a href="#" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-pink-600 hover:bg-pink-700 transform transition duration-300 hover:scale-105">
-                    Download Brochure
-                    <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                      <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              
-              <div class="relative animate__animated animate__fadeInRight">
-                <div class="grid grid-cols-2 gap-4">
-                  <img src="https://abakersconfession.co.uk/images/rosecake.png" alt="Rose Cake" class="w-full rounded-lg transform hover:scale-105 transition duration-300 transition-opacity opacity-100" loading="lazy">
-                  <img src="https://abakersconfession.co.uk/images/whitecake.png" alt="White Cake" class="w-full rounded-lg transform hover:scale-105 transition duration-300 transition-opacity opacity-100" loading="lazy">
-                  <img src="https://abakersconfession.co.uk/images/cupcake.png" alt="Cupcake" class="w-full rounded-lg transform hover:scale-105 transition duration-300 transition-opacity opacity-100" loading="lazy">
-                  <img src="https://abakersconfession.co.uk/images/novelty1.webp" alt="Novelty Cake" class="w-full rounded-lg transform hover:scale-105 transition duration-300 transition-opacity opacity-100" loading="lazy">
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="absolute bottom-0 left-0 right-0">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220">
-              <path fill="#ffffff" fill-opacity="1" d="M0,96L48,106.7C96,117,192,139,288,138.7C384,139,480,117,576,101.3C672,85,768,75,864,80C960,85,1056,107,1152,112C1248,117,1344,107,1392,101.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-            </svg>
-          </div>
-        </section>
-      </div>
+     
 
-      <section id="thankYouMessage" class="bg-white py-16">
-          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto">
-              <div class="mb-8 animate__animated animate__fadeIn">
-                <img src="https://abakersconfession.co.uk/images/janupic.webp" alt="Janannie Rangaswamy" class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-pink-200 transition-opacity duration-300 opacity-100" loading="lazy">
-              </div>
-              
-              <h2 class="text-3xl font-bold text-gray-900 mb-6 animate__animated animate__fadeInUp">
-                A Personal Thank You from Janannie
+   
+
+
+
+<div id="root">
+  <section id="welcomeHero" class="pt-24 lg:pt-32 pb-16 bg-gradient-to-b from-rose-50 to-white">
+    <div class="container mx-auto px-4">
+      <div class="flex mt-16 flex-col lg:flex-row items-center justify-center gap-12 max-w-[1280px] mx-auto">
+        <div class="flex justify-center lg:justify-end animate__animated animate__fadeIn min-w-[320px]">
+          <img src="https://abakersconfession.co.uk/images/janupic.webp" alt="Janu - A Baker's Confession" class="rounded-full w-64 h-64 lg:w-80 lg:h-80 object-cover shadow-xl border-4 border-white transition-opacity duration-300 opacity-100" loading="lazy">
+        </div>
+
+        <!-- Text Content Column -->
+        <div class="text-center lg:text-left animate__animated animate__fadeInRight">
+          
+          <h1 class=" text-center lg:text-left text-3xl lg:text-4xl font-medium text-rose-400 mb-8">
+            Welcome to your journey of creating the perfect wedding cake!
+          </h1>
+          <h2 class="text-2xl lg:text-3xl  font-semibold text-neutral-800 mb-6">
+            Here's our link to our Brochure!
+          </h2>
+          <p class="text-neutral-700 text-lg mb-6 leading-relaxed">
+            I'm thrilled you're here, and I'm excited to help bring your cake vision to life. Whether you're envisioning a classic design, a modern masterpiece, or something entirely unique, I'm here to bring your vision to life and offer a bespoke wedding cake to suit your style and make your wedding day even more unforgettable.
+          </p>
+          <div class="animate__animated animate__bounceIn animate__delay-1s">
+            <a href="#downloadBrochure" class="inline-block bg-rose-400 text-white px-8 py-3 rounded-full hover:bg-rose-500 transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+              Download Our Brochure Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div id="root">
+  <section id="downloadBrochure" class="py-16 bg-neutral-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-white rounded-2xl shadow-xl p-8 lg:p-12 animate__animated animate__fadeIn">
+          <!-- Gallery Grid -->
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+          <img src="images/wedcake/image2.webp" alt="Wedding Cake 1" class="h-48 w-48 object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transition-opacity opacity-100" >
+          <img src="images/wedcake/image1.webp" alt="Wedding Cake 2" class="h-48 w-48 object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transition-opacity opacity-100" >
+          <img src="images/wedcake/image3.webp" alt="Wedding Cake 3" class="h-48 w-48 object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transition-opacity opacity-100" >
+          <img src="images/wedcake/image4.webp" alt="Wedding Cake 4" class="h-48 w-48 object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transition-opacity opacity-100" >
+        </div>
+
+          <!-- Content -->
+          <div class="text-center">
+            <p class="text-lg lg:text-xl text-neutral-700 mb-8 leading-relaxed">
+              By downloading my brochure, you'll explore the wedding cake collections, customization options, and a la carte enhancements available to make your cake truly one-of-a-kind and a seamless experience for you. From your first consultation to the final slice, I'm here to guide you every step of the way, ensuring your cake is a stunning reflection of your love story.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-rose-400 mb-6 animate__animated animate__fadeInUp">
+              Let's create something beautiful together!
+            </h3>
+
+            <p class="text-neutral-600 mb-8">
+              You can also expect a small welcome message from me so check your spam/junk in case it's arrived there!
+            </p>
+
+            <div class="mb-8 animate__animated animate__bounceIn">
+              <a href="#" class="inline-block bg-rose-400 text-white px-10 py-4 rounded-full hover:bg-rose-500 transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-lg font-medium">
+                Download Our Brochure Now
+              </a>
+            </div>
+
+            <p class="text-sm text-neutral-500 italic max-w-2xl mx-auto">
+              You can tailor your communication preferences or unsubscribe at any time by using the link at the bottom of the email we send. We promise not to share your details with anyone else for marketing purposes and you can stop receiving communication at any time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div id="root">
+  <section id="messageContent" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <!-- Message Box -->
+        <div class="bg-rose-50 rounded-3xl p-8 lg:p-12 shadow-lg animate__animated animate__fadeIn">
+          <!-- Message Grid -->
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <!-- Cake Image Gallery -->
+            <div class="grid grid-cols-2 gap-4 animate__animated animate__fadeInLeft">
+              <img src="images/wedcake/IMG_1136.webp" alt="Wedding Cake 5" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-40 object-cover transition-opacity opacity-100" loading="lazy">
+              <img src="images/wedcake/PhotoRoom_20230731_152913.webp" alt="Wedding Cake 6" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-40 object-cover transition-opacity opacity-100" loading="lazy">
+              <img src="images/wedcake/IMG_4675.webp" alt="Wedding Cake 7" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-40 object-cover transition-opacity opacity-100" loading="lazy">
+              <img src="images/wedcake/PhotoRoom_20230731_153519.webp" alt="Wedding Cake 8" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-40 object-cover transition-opacity opacity-100" loading="lazy">
+            </div>
+
+            <!-- Message Content -->
+            <div class="space-y-6 animate__animated animate__fadeInRight">
+              <h2 class="text-2xl lg:text-3xl font-semibold text-neutral-800 mb-6">
+                Let's Begin Your Wedding Cake Journey
               </h2>
               
-              <div class="prose prose-lg mx-auto text-gray-600 animate__animated animate__fadeInUp">
-                <p class="mb-6">
-                  I'm truly delighted to welcome you to A Baker's Confession family! Your subscription means the world to me, and I can't wait to share my passion for artisanal baking with you.
+              <div class="space-y-4">
+                <p class="text-neutral-700 leading-relaxed">
+                  I'm thrilled you're here, and I'm excited to help bring your cake vision to life. Whether you're envisioning a classic design, a modern masterpiece, or something entirely unique, I'm here to make your wedding day even more unforgettable.
                 </p>
-                
-                <div class="bg-pink-50 rounded-lg p-6 mb-8">
-                  <h3 class="text-xl font-semibold text-gray-900 mb-4">Stay Connected</h3>
-                  <ul class="text-left space-y-3">
-                    <li class="flex items-start">
-                      <svg class="h-6 w-6 text-pink-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                      </svg>
-                      Check your inbox for exclusive offers
-                    </li>
-                    <li class="flex items-start">
-                      <svg class="h-6 w-6 text-pink-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                      </svg>
-                      Follow us on social media for daily inspiration
-                    </li>
-                    <li class="flex items-start">
-                      <svg class="h-6 w-6 text-pink-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                      </svg>
-                      Explore our brochure for signature creations
-                    </li>
-                  </ul>
+
+                <div class="bg-white rounded-xl p-4 shadow-md">
+                  <p class="text-rose-400 font-medium mb-2">Important Note:</p>
+                  <p class="text-neutral-600 text-sm">
+                    You can expect a welcome message from me shortly. Please check your spam/junk folder if you don't see it in your inbox.
+                  </p>
                 </div>
               </div>
-              
-              
+
+              <!-- Steps -->
+              <div class="flex flex-col space-y-4 mt-8">
+                <div class="flex items-center space-x-4">
+                  <span class="w-8 h-8 bg-rose-400 text-white rounded-full flex items-center justify-center">1</span>
+                  <span class="text-neutral-700">Download the brochure</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                  <span class="w-8 h-8 bg-rose-400 text-white rounded-full flex items-center justify-center">2</span>
+                  <span class="text-neutral-700">Explore cake collections</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                  <span class="w-8 h-8 bg-rose-400 text-white rounded-full flex items-center justify-center">3</span>
+                  <span class="text-neutral-700">Schedule your consultation</span>
+                </div>
+              </div>
             </div>
           </div>
-        </section>
-      <div id="root">
-        <section id="nextSteps" class="bg-zinc-50 py-16">
-          <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-8 animate__animated animate__fadeIn">
-              <h2 class="text-3xl font-bold text-zinc-800 mb-4">What's Next?</h2>
-              <div class="mt-12 text-center bg-white rounded-xl p-8 shadow-sm animate__animated animate__fadeInUp">
-              <div class="max-w-2xl mx-auto">
-                <h3 class="text-xl font-semibold text-zinc-800 mb-4">Have Questions?</h3>
-                <p class="text-zinc-600 mb-6">
-                  We're here to help! Feel free to reach out if you need any assistance or have questions about your order.
-                </p>
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                  <a href="https://calendly.com/abakersconfession/15min" class="inline-block px-6 py-2 border border-[#AC4D6F] text-[#AC4D6F] hover:text-white rounded-full hover:bg-[#92234b] transition-colors duration-300">
-                    Book a Call
-                  </a>
-                </div>
-              </div>
-            </div>
-
-              <p class="text-zinc-600 mt-20 ">Discover more ways to stay inspired and connected</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 animate__animated animate__fadeInUp">
-              <!-- Card 1 -->
-              <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
-                <div class="p-6 text-center">
-                  <img src="https://abakersconfession.co.uk/images/rosecake.png" alt="Gallery" class="w-24 h-24 mx-auto mb-4 transition-opacity duration-300 opacity-100" loading="lazy">
-                  <h3 class="text-xl font-semibold text-zinc-800 mb-3">Explore Gallery</h3>
-                  <p class="text-zinc-600 mb-6">Get inspired by our collection of beautiful cake designs</p>
-                  <a href="/gallery" class="inline-block px-6 py-2 border border-[#AC4D6F] text-[#AC4D6F] hover:text-white rounded-md hover:bg-[#92234b] transition-colors duration-300">
-                    View Gallery
-                  </a>
-                </div>
-              </div>
-
-              <!-- Card 2 -->
-              <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
-                <div class="p-6 text-center">
-                  <img src="https://abakersconfession.co.uk/images/whitecake.png" alt="Packages" class="w-24 h-24 mx-auto mb-4 transition-opacity duration-300 opacity-100" loading="lazy">
-                  <h3 class="text-xl font-semibold text-zinc-800 mb-3">Browse Packages</h3>
-                  <p class="text-zinc-600 mb-6">Explore our range of cake packages and offerings</p>
-                  <a href="/packages" class="inline-block px-6 py-2 border border-[#AC4D6F] text-[#AC4D6F] hover:text-white rounded-md hover:bg-[#92234b] transition-colors duration-300">
-                    See Packages
-                  </a>
-                </div>
-              </div>
-
-              <!-- Card 3 -->
-              <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
-                <div class="p-6 text-center">
-                  <img src="https://abakersconfession.co.uk/images/cupcake.png" alt="Social Media" class="w-24 h-24 mx-auto mb-4 transition-opacity duration-300 opacity-100" loading="lazy">
-                  <h3 class="text-xl font-semibold text-zinc-800 mb-3">Follow Us</h3>
-                  <p class="text-zinc-600 mb-6">Stay updated with our latest creations</p>
-                  <div class="flex justify-center space-x-4">
-                    <a href="#" class="hover:opacity-80 transition-opacity">
-                      <img src="https://abakersconfession.co.uk/images/instagram.svg" alt="Instagram" class="w-6 h-6 transition-opacity duration-300 opacity-100" loading="lazy">
-                    </a>
-                    <a href="#" class="hover:opacity-80 transition-opacity">
-                      <img src="https://abakersconfession.co.uk/images/facebook.svg" alt="Facebook" class="w-6 h-6 transition-opacity duration-300 opacity-100" loading="lazy">
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Additional Info -->
-            
-          </div>
-        </section>
+        </div>
       </div>
+    </div>
+  </section>
+</div>
 
-        <!---footer--->
+<div id="root">
+  <section id="featuredBadges" class="py-16 bg-neutral-50">
+    <div class="container mx-auto px-4">
+      <!-- Featured Section -->
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12 animate__animated animate__fadeIn">
+          <h2 class="text-3xl font-semibold text-neutral-800 mb-4">Featured in</h2>
+          <div class="flex flex-col md:flex-row gap-8 items-center justify-center">
+            <img src="./images/Featured_Christmas_2020.webp" alt="Featured Badge" class="w-36 h-36 object-cover rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transition-opacity opacity-100" loading="lazy">
+            <img src="./images/Febbadge.webp" alt="Featured Badge" class="w-36 h-36 object-cover rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transition-opacity opacity-100" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Recommended Supplier Section -->
+        <div class="mt-16 text-center animate__animated animate__fadeIn">
+          <h2 class="text-3xl font-semibold text-neutral-800 mb-8">Recommended Supplier in</h2>
+          <div class="flex gap-8 items-center justify-center">
+            <img src="./images/Rockmywed.webp" alt="Supplier Badge" class="w-48 h-48 object-cover rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transition-opacity opacity-100" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Video Section -->
+        <div class="mt-16 bg-white rounded-2xl shadow-xl p-8 animate__animated animate__fadeIn">
+           <div class="text-center mb-12 animate__animated animate__fadeIn">
+          <h2 class="text-3xl lg:text-4xl font-semibold text-neutral-800 mb-4">
+            A Sweet Love Story
+          </h2>
+          <p class="text-lg text-neutral-600">
+            Watch Arianna &amp; Jakub's Wedding Cake Journey
+          </p>
+        </div>
+            <div class="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden shadow-lg" style="width: 100%; height: 0; padding-bottom: 56.25%; position: relative;">
+              
+
+            <iframe  src="https://www.youtube.com/embed/277aMpHiUTY?si=BgffjwHfjhbnvreS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div id="root">
+  <section id="testimonialVideo" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <!-- Heading -->
+          <h2 class="text-3xl font-semibold text-neutral-800 mb-8 text-center">See Our Work in Action</h2>
+
+
+        <!-- Video Grid with Thumbnails -->
+        <div class="flex flex-col lg:flex-row gap-8 items-center max-w-[720px] mx-auto">
+          <!-- Main Video -->
+            <div class="bg-neutral-50 rounded-2xl p-6 shadow-lg animate__animated animate__fadeInLeft w-full max-w-[250px]">
+              <div class="rounded-xl overflow-hidden shadow-md h-full">
+                <img src="images/wedcake/IMG_1136.webp" alt="Wedding Cake 5" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transition-opacity opacity-100 max-h-[356px]" loading="lazy" >
+              </div>
+            </div>
+
+          <!-- Testimonial Images -->
+          <div class="space-y-6 animate__animated animate__fadeInRight">
+            <div class="grid grid-cols-2 gap-4">
+              <img src="https://abakersconfession.co.uk/images/index/ANGELHOTEL203.webp" alt="Wedding Cake Moment" class="rounded-lg shadow-md hover:shadow-xl transition-all duration-300 w-full h-48 object-cover transition-opacity opacity-100" loading="lazy">
+              <img src="https://abakersconfession.co.uk/images/index/ANGELHOTEL204.webp" alt="Wedding Cake Moment" class="rounded-lg shadow-md hover:shadow-xl transition-all duration-300 w-full h-48 object-cover transition-opacity opacity-100" loading="lazy">
+            </div>
+            
+            <!-- Quote -->
+            <div class="bg-rose-50 rounded-xl p-6 shadow-md">
+              <p class="text-neutral-700 italic leading-relaxed">
+                "Let the fun of wedding cake planning begin! Together, we'll create the perfect centerpiece for your special day."
+              </p>
+              <p class="text-rose-400 font-medium mt-4">
+                - Janannie Rangaswamy
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Credits -->
+        <div class="mt-8 text-center text-sm text-neutral-500 animate__animated animate__fadeIn">
+          <p>
+            Photography Credit: Ruiz Rocks 
+            <a href="http://www.ruiz.rocks" class="text-rose-400 hover:text-rose-500 transition-colors">www.ruiz.rocks</a>
+          </p>
+          <p>
+            Celebrant: Susannah – 
+            <a href="http://www.vitaceremonies.com" class="text-rose-400 hover:text-rose-500 transition-colors">www.vitaceremonies.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div id="root">
+  <section id="contactForm" class="py-16 bg-neutral-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-white rounded-2xl shadow-xl p-8 lg:p-12 animate__animated animate__fadeIn">
+          <h2 class="text-3xl font-semibold text-neutral-800 text-center mb-8">
+            Let the fun of wedding cake planning begin
+          </h2>
+
+          <form class="space-y-6" id="weddingCakeForm">
+            <div class="grid md:grid-cols-2 gap-6">
+              <!-- First Name -->
+              <div>
+                <label for="firstName" class="block text-neutral-700 font-medium mb-2">First Name</label>
+                <input type="text" id="firstName" name="firstName" class="w-full px-4 py-3 rounded-lg border border-neutral-200 focus:border-rose-400 focus:ring-2 focus:ring-rose-200 outline-none transition-all" required="">
+              </div>
+
+              <!-- Last Name -->
+              <div>
+                <label for="lastName" class="block text-neutral-700 font-medium mb-2">Last Name</label>
+                <input type="text" id="lastName" name="lastName" class="w-full px-4 py-3 rounded-lg border border-neutral-200 focus:border-rose-400 focus:ring-2 focus:ring-rose-200 outline-none transition-all" required="">
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div>
+              <label for="email" class="block text-neutral-700 font-medium mb-2">Email</label>
+              <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg border border-neutral-200 focus:border-rose-400 focus:ring-2 focus:ring-rose-200 outline-none transition-all" required="">
+            </div>
+
+            <!-- Phone -->
+            <div>
+              <label for="phone" class="block text-neutral-700 font-medium mb-2">Phone (optional)</label>
+              <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 rounded-lg border border-neutral-200 focus:border-rose-400 focus:ring-2 focus:ring-rose-200 outline-none transition-all">
+            </div>
+
+            <!-- Ideas -->
+            <div>
+              <label for="ideas" class="block text-neutral-700 font-medium mb-2">Tell me more about your ideas</label>
+              <textarea id="ideas" name="ideas" rows="4" class="w-full px-4 py-3 rounded-lg border border-neutral-200 focus:border-rose-400 focus:ring-2 focus:ring-rose-200 outline-none transition-all resize-none" required=""></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="text-center">
+              <button type="submit" class="bg-rose-400 text-white px-8 py-3 rounded-full hover:bg-rose-500 transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 animate__animated animate__pulse animate__infinite">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</div>
+
+<div id="root">
+  <section id="socialLinks" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-neutral-50 rounded-2xl p-8 lg:p-12 shadow-lg animate__animated animate__fadeIn">
+          <!-- Contact Grid -->
+          <div class="grid md:grid-cols-2 gap-8 items-center">
+            <!-- Contact Info -->
+            <div class="space-y-6">
+                <!-- Email -->
+                <a href="mailto:abakersconfession@gmail.com" class="flex items-center space-x-4 text-neutral-700 hover:text-rose-400 transition-colors group">
+              <!-- Email -->
+              <a href="mailto:abakersconfession@gmail.com" class="flex items-center space-x-4 text-neutral-700 hover:text-rose-400 transition-colors group">
+                <img src="https://abakersconfession.co.uk/images/mail.svg" alt="Email" class="w-6 h-6 transition-opacity duration-300 opacity-100" loading="lazy" style="filter: brightness(0) saturate(100%) invert(52%) sepia(34%) saturate(819%) hue-rotate(302deg) brightness(102%) contrast(97%);">
+                <span class="group-hover:underline">abakersconfession@gmail.com</span>
+              </a>
+
+              <!-- Phone -->
+              <a href="tel:07391206605" class="flex items-center space-x-4 text-neutral-700 hover:text-rose-400 transition-colors group">
+                <img src="https://abakersconfession.co.uk/images/contact-icon.svg" alt="Phone" class="w-6 h-6 transition-opacity duration-300 opacity-100" loading="lazy" style="filter: brightness(0) saturate(100%) invert(52%) sepia(34%) saturate(819%) hue-rotate(302deg) brightness(102%) contrast(97%);">
+                <span class="group-hover:underline">07391206605</span>
+              </a>
+
+              <!-- Social Media Links -->
+              <div class="flex space-x-6 pt-4">
+                <a href="https://Facebook.com/abakersconfession" target="_blank" rel="noopener noreferrer" class="transform hover:scale-110 transition-transform">
+                  <img src="https://abakersconfession.co.uk/images/facebook.svg" alt="Facebook" class="w-8 h-8 transition-opacity duration-300 opacity-100" loading="lazy" style="filter: brightness(0) saturate(100%) invert(52%) sepia(34%) saturate(819%) hue-rotate(302deg) brightness(102%) contrast(97%);">
+                </a>
+                <a href="https://Instagram.com/abakersconfession_" target="_blank" rel="noopener noreferrer" class="transform hover:scale-110 transition-transform">
+                  <img src="https://abakersconfession.co.uk/images/instagram.svg" alt="Instagram" class="w-8 h-8 transition-opacity duration-300 opacity-100" loading="lazy" style="filter: brightness(0) saturate(100%) invert(52%) sepia(34%) saturate(819%) hue-rotate(302deg) brightness(102%) contrast(97%);">
+                </a>
+              </div>
+
+              <div class="mt-8 text-center text-sm text-neutral-500 bg-rose-50 rounded-xl p-6 shadow-md">
+                <p>Photography Credit: <a href="http://www.ruiz.rocks" class="text-rose-400 hover:text-rose-500 transition-colors">Ruiz Rocks</a></p>
+                <p>Celebrant: <a href="http://www.vitaceremonies.com" class="text-rose-400 hover:text-rose-500 transition-colors">Susannah – Vita Ceremonies</a></p>
+              </div>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-2 gap-4">
+              <img src="https://abakersconfession.co.uk/images/gl1.webp" alt="Wedding Cake Gallery" class="rounded-lg shadow-md hover:shadow-xl transition-all duration-300 w-full h-40 object-cover transition-opacity opacity-100" loading="lazy">
+              <img src="https://abakersconfession.co.uk/images/gl2.webp" alt="Wedding Cake Gallery" class="rounded-lg shadow-md hover:shadow-xl transition-all duration-300 w-full h-40 object-cover transition-opacity opacity-100" loading="lazy">
+              <img src="https://abakersconfession.co.uk/images/gl3.webp" alt="Wedding Cake Gallery" class="rounded-lg shadow-md hover:shadow-xl transition-all duration-300 w-full h-40 object-cover transition-opacity opacity-100" loading="lazy">
+              <img src="https://abakersconfession.co.uk/images/gl4.webp" alt="Wedding Cake Gallery" class="rounded-lg shadow-md hover:shadow-xl transition-all duration-300 w-full h-40 object-cover transition-opacity opacity-100" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Credits -->
+          
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
 
         <footer class="footer m-0">
             <div class="d-flex justify-center gap-40 foot-top">
